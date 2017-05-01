@@ -1,0 +1,17 @@
+
+#include <LiquidCrystal.h> // include the library code
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2); // initialize interface pins
+void setup() 
+{
+  lcd.begin(20, 2); // set up the LCD's number of columns and rows:
+  lcd.print("04050626 Eden");
+  lcd.setCursor(0,1);
+  lcd.print("04050254 Yo");
+  Serial.begin(9600);
+  
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+}
